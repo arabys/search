@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'vazir';
+  src: url("../fonts/vazir.eot");
+  src: url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff") format("woff"), url("../fonts/vazir.woff2") format("woff2");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "vazir";
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#c00), to(#faa000));
+  background: linear-gradient(90deg, #c00, #faa000);
+}
+
+.search {
+  height: 300px;
+  position: relative;
+}
+
+.search input {
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10px;
+  height: 50px;
+  width: 20px;
+  border: none;
+  -webkit-transition: width .4s ease;
+  transition: width .4s ease;
+}
+
+.search.active input {
+  width: 300px;
+}
+
+.search.active .search-btn {
+  right: 300px;
+}
+
+.search .search-btn {
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: right .4s ease;
+  transition: right .4s ease;
+}
+/*# sourceMappingURL=style.css.map */
